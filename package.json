@@ -1,0 +1,32 @@
+{
+  "name": "Futurama-Profile-Request",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "npm run test -- --watch",
+    "start": "node server.js",
+    "start:watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cozyaf/Futurama-Profile-Request.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cozyaf/Futurama-Profile-Request/issues"
+  },
+  "homepage": "https://github.com/cozyaf/Futurama-Profile-Request#readme",
+  "devDependencies": {
+    "eslint": "^6.0.1",
+    "jest": "^24.8.0",
+    "nodemon": "^1.19.1",
+    "supertest": "^4.0.2"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

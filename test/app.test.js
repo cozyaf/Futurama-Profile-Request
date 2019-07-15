@@ -26,4 +26,16 @@ describe('Routes', () => {
         }]);
       });
   });
+
+  it('gets profile by id with GET', () => {
+    return request(app)
+      .get('/profile/0')
+      .then(res => {
+        expect(res.body).toEqual({
+          name: 'Claire',
+          favoriteCharacter: 'Fry',
+          tagline: expect.any(String)
+        });
+      });
+  });
 });

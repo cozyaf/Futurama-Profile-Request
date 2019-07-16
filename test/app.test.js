@@ -38,4 +38,23 @@ describe('Routes', () => {
         });
       });
   });
+
+  it('can update an item with PATCH', () => {
+    const updatedProfile = {
+      favoriteCharacter: 'Bender'
+    };
+    
+    return request(app)
+      .patch('/profile/0')
+      .send(updatedProfile)
+      .then(res => {
+        expect(res.body).toEqual({
+          name: 'Claire',
+          favoriteCharacter: 'Bender',
+          tagline: expect.any(String)
+        });
+      });
+  });
+
+  it
 });

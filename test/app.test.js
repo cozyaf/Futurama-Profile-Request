@@ -56,5 +56,15 @@ describe('Routes', () => {
       });
   });
 
-  it
+  it('deletes a profile by id', () => {
+    return request(app)
+      .delete('/profile/0')
+      .then(res => {
+        expect(res.body).toEqual({
+          name: 'Claire',
+          favoriteCharacter: 'Bender',
+          tagline: expect.any(String)
+        });
+      });
+  });
 });
